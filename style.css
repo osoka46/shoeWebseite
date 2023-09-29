@@ -9,10 +9,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    min-width: 90vw;
+    z-index: 1;
+}
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    color: #fff;
+    cursor: pointer;
+
 }
 .nav-links a{
     color: #fff;
-    cursor: pointer;
+    font-size: 25px;
+    text-decoration: none;
+
+    
 }
 .container{
     width: 100vw;
@@ -20,5 +34,10 @@
     background-color: #1e2227;
     color: #fff;
     padding: 60px 100px;
-
 }
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+
