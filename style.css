@@ -50,6 +50,7 @@
 }
 .main .col1,
 .main .col2{
+    flex-basis: 50%;
     height: 100%;
     display: flex;
     flex-flow: column wrap;
@@ -70,7 +71,7 @@
 
 .main .col1 p{
     padding-right: 10px;
-    line-height: 1.4px;
+    line-height: 20px;
 }
 .main .col1 .price{
     display: flex;
@@ -84,10 +85,29 @@
     font-size: 25px;
 }
 
-.main .col1 .buttons{
+.col1 .buttons{
+  
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
+    width: max-content;
     column-gap: 10px;
+}
 
-
+.col1 .buttons button{
+    background-color: red;
+    margin-top: 10px;
+    padding: 20px 40px;
+    cursor: pointer;
+    transition: ease-in 0.4s;
+  
+}
+.col1 .buttons button:hover{
+    background-color:#aa0505;
+    transform: translateY(-5px);
+  
+}
+.main .col1 .buttons a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
 }
