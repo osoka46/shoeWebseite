@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -12,6 +13,7 @@
     position: fixed;
     min-width: 90vw;
     z-index: 1;
+    padding-left: 8%;
 }
 .nav-links{
     display: flex;
@@ -40,4 +42,52 @@
     width: 120px;
     cursor: pointer;
 }
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+.main .col1,
+.main .col2{
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: space-between;
+}
+.main .col1{
+    padding-left: 8%;
+}
 
+.main .col1 h1{
+    font-size: 74px;
+    text-transform: uppercase;
+    line-height: 100px;
+    margin-bottom: 5px;
+
+}
+
+.main .col1 p{
+    padding-right: 10px;
+    line-height: 1.4px;
+}
+.main .col1 .price{
+    display: flex;
+    align-items: flex-end;
+    column-gap: 10px;
+    margin: 10px 0;
+}
+
+.main .col1 h2{
+    line-height: 10px;
+    font-size: 25px;
+}
+
+.main .col1 .buttons{
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 10px;
+
+
+}
