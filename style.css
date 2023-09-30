@@ -144,8 +144,15 @@
 
 .small-img img{
     width: 120px;
-    transform: rotate(-20deg);
+    transition: ease-in-out 0.5s;
 }
+
+.small-img img:hover{
+    transform: rotate(-20deg);
+    
+
+}
+
 
 .small-img:nth-child(1){
     background:#b9c8ff;
@@ -159,5 +166,6 @@
 .small-img:nth-child(4){
     background:#ff6767;
 }
+
 
 
