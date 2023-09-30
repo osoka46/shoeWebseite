@@ -14,6 +14,7 @@
     min-width: 90vw;
     z-index: 1;
     padding-left: 8%;
+    padding-right: 0.5%;
 }
 .nav-links{
     display: flex;
@@ -110,4 +111,23 @@
     color: #fff;
     text-decoration: none;
     font-size: 25px;
+}
+
+.feature-img {
+    width: 100%;
+    text-align: center;
+}
+.main .col2{
+    background-color: #aa0505;
+    padding-right: 8%;
+    position: relative;
+}
+.feature-img img{
+    width: 80%;
+    transform: rotate(-20deg);
+    transition: 0.4s ease-in-out;
+}
+
+.feature-img img:hover{
+    transform: rotate(0);
 }
